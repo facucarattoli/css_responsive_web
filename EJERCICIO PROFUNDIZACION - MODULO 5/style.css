@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    width: 100vw;
+    background-image: radial-gradient(
+      circle,
+      #3a3b38,
+      #2f3230,
+      #262928,
+      #1e2020,
+      #161718
+    );
+  }
+  
+  /* ----------- ALUMNO ----------------- */
+  /* Aca debe colocar los estilos necesarios para generar el layout
+   que se ve en la imagen*/
+  .padre{
+      display: grid;
+      grid-template-columns: repeat(3,minmax(10px, 1fr));
+      grid-template-rows: repeat(auto-fit,minmax(10px,1fr));
+      gap: 20px;
+      padding: 20px;
+      text-align: center;
+  }
+
+.padre > div {
+    border-radius: 20px solid white;
+}
+
+  @media only screen and (max-width: 900px){
+     .padre{
+         grid-template: repeat(auto-fit, minmax(10px, 1fr)) / 1fr;
+         
+     }
+  }
+  /* ------------------------------------ */
+  
+  /* Color de fondo según tipo */
+  .fuego {
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1),
+      rgba(238, 129, 48, 1) 
+      );
+  }
+
+  .psiquico{
+     background: radial-gradient(
+          circle, 
+          rgb(162, 161, 194),
+          rgba(0, 0, 0, 0)  
+          );
+    }
+  .electrico{
+     background: radial-gradient(
+      circle,
+      rgba(224, 224, 205, 0.822),
+      rgb(207, 169, 13) 
+      );
+    }   
+h3{
+    padding-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+  
